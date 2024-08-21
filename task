@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:alpha="0.3"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/android_logo" />
+
+    <ImageView
+        android:id="@+id/iv_google"
+
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:src="@drawable/google_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_details"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google LLC is an American multinational corporation and technology company focusing on online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, consumer electronics, and artificial intelligence."
+        app:layout_constraintEnd_toEndOf="wrap_content"
+        app:layout_constraintEnd_toStartOf="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_google" />
+
+
+    <TextView
+        android:drawableStart="@drawable/baseline_location_on_24"
+        android:drawablePadding="40dp"
+        android:textSize="40sp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="mountain view , cali"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_details" />
+
+    <TextView
+        android:drawableStart="@drawable/baseline_wb_sunny_24"
+        android:textColor="#898"
+        android:drawablePadding="40dp"
+        android:textSize="40sp"
+        android:id="@+id/textView"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="google.com"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+/ScrollView>
